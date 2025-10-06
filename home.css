@@ -695,8 +695,8 @@ body.menu-open {
 .mobile-title .trademarkk {
   position: absolute;
   font-size: 0.8rem;
-  top: -2px;         /* move slightly above 'n' */
-  right: -12px;      /* place just right of 'n' */
+  top: -3px;         /* move slightly above 'n' */
+  right: -14px;      /* place just right of 'n' */
   color: black;
   font-weight: bold;
 }
@@ -1034,8 +1034,8 @@ body.menu-open {
   }
 
   .mobile-title .trademarkk {
-    top: -2px;
-    right: -11px;
+    top: 3px;
+    right: 10px;
   }
   
   .logo-text .career-word {
@@ -1070,8 +1070,8 @@ body.menu-open {
   }
 
   .mobile-title .trademarkk {
-    top: 3px;
-    right: 30px;
+    top: 2px;
+    right: 10px;
   }
   
   .logo-text .career-word {
@@ -3373,3 +3373,4 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
+
