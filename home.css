@@ -28,7 +28,7 @@ body {
     border: none;
     border-radius: 10px;
 
-    font-size: 25px;
+    font-size: 30px;
     font-weight: bold;
 
     cursor: pointer;
@@ -455,7 +455,6 @@ body {
   right: 4px;            /* slightly right of 'n' */
   font-weight: 600;
 }
-
 
 
 
@@ -1066,13 +1065,13 @@ body.menu-open {
   }
   
    .logo-text .evolution-word .trademark {
-    top: -3px;
-    right: -10px;
+    top: 5px;
+    right: 1px;
   }
 
   .mobile-title .trademarkk {
-    top: -2px;
-    right: -9px;
+    top: 3px;
+    right: 30px;
   }
   
   .logo-text .career-word {
@@ -1199,15 +1198,15 @@ body.menu-open {
 /* Responsive font sizes */
 @media (max-width: 768px) {
   .carousel-card {
-    font-size: 1.2rem; /* smaller for tablets & small screens */
-    padding: 10px 30px;
+    font-size: 1.3rem; /* smaller for tablets & small screens */
+    padding: 12px 30px;
   }
 }
 
 @media (max-width: 480px) {
   .carousel-card {
-    font-size: 0.91rem; /* smaller for mobile phones */
-    padding: 10px 20px;
+    font-size: 1.0rem; /* smaller for mobile phones */
+    padding: 12px 20px;
   }
 }
 
@@ -3374,5 +3373,3 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
-
-
