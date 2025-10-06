@@ -437,23 +437,25 @@ body {
   flex-direction: column;
 }
 
+/* --- Desktop Trademark ® --- */
 .logo-text .evolution-word {
   font-size: 2.15rem;
   font-weight: 800;
   color: #fbc02d;
   line-height: 1.2;
-  position: relative; /* allows absolute positioning of ® */
+  position: relative;
   display: inline-block;
 }
 
 .logo-text .evolution-word .trademark {
-  font-size: 0.9rem;       /* smaller than the text */
-  color: black;           /* same color as "Evolution" */
   position: absolute;
-  top: 6px;                /* adjust vertically */
-  right: 2px;             /* adjust horizontally */
+  font-size: 0.65rem;    /* smaller, subtle */
+  color: black;
+  top: -6px;             /* moves up above 'n' */
+  right: 2px;            /* slightly right of 'n' */
   font-weight: 600;
 }
+
 
 
 .logo-text .career-word {
@@ -680,24 +682,22 @@ body.menu-open {
   margin-top:25px;
 }
 
-/* Mobile title styles */
 .mobile-title .evolution-word {
   font-size: 1.9rem;
   color: #fbc02d;
   font-weight: bold;
   line-height: 1.1;
-  margin-bottom: 0;
-  position: relative; /* Needed for trademark positioning */
+  position: relative;
   display: inline-block;
 }
 
-/* Trademark styling */
+/* Trademark styling (mobile) */
 .mobile-title .trademarkk {
-  font-size: 0.8rem;
   position: absolute;
-  top: 3px;   /* adjust vertical position */
-  right: 31px; /* adjust horizontal position */
-  color: black; /* same yellow as Evolution */
+  font-size: 0.8rem;
+  top: -2px;         /* move slightly above 'n' */
+  right: -12px;      /* place just right of 'n' */
+  color: black;
   font-weight: bold;
 }
 
@@ -1028,6 +1028,16 @@ body.menu-open {
     font-size: 1.9rem;
   }
 
+  .logo-text .evolution-word .trademark {
+    top: -3px;
+    right: -12px;
+  }
+
+  .mobile-title .trademarkk {
+    top: -2px;
+    right: -11px;
+  }
+  
   .logo-text .career-word {
     font-size: 0.9rem;
 	margin-top: -1.5px;
@@ -1053,7 +1063,17 @@ body.menu-open {
   .logo-text .evolution-word {
     font-size: 1.9rem;
   }
+  
+   .logo-text .evolution-word .trademark {
+    top: -3px;
+    right: -10px;
+  }
 
+  .mobile-title .trademarkk {
+    top: -2px;
+    right: -9px;
+  }
+  
   .logo-text .career-word {
     font-size: 0.9rem;
 	margin-top: -1.5px;
@@ -1162,18 +1182,33 @@ body.menu-open {
   border-radius: 10px;
 }
 
+/* Carousel Card */
 .carousel-card {
   background: #003c71;
-  padding: 18.5px 40px;
+  padding: 12px 40px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.1);
-  font-size: 1.7rem;
+  font-size: 1.8rem; /* larger default for desktop */
   font-weight: bold;
   color: yellow;
   width: 100%;
   text-align: center;
+  transition: font-size 0.3s ease;
 }
 
-/* 🔹 Remove fixed heights from media queries – images auto adjust now */
+/* Responsive font sizes */
+@media (max-width: 768px) {
+  .carousel-card {
+    font-size: 1.2rem; /* smaller for tablets & small screens */
+    padding: 8px 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-card {
+    font-size: 0.91rem; /* smaller for mobile phones */
+    padding: 6px 20px;
+  }
+}
 
 
 /* Carousel Section ends -------------------------------------------------------------------------------------------------------------------------- */
@@ -1185,7 +1220,7 @@ body.menu-open {
   position: relative;
   height: 100vh; /* Full height on desktop */
   overflow: hidden;
-  margin-top: 25px;
+  margin-top: -20px;
 }
 
 .bg-video {
@@ -1294,7 +1329,7 @@ body.menu-open {
 
   .video-content h2 {
     font-size: 2rem; /* Adjust heading size for smaller screens */
-    margin-top: 20px; /* Add some margin on top */
+    margin-top: -20px; /* Add some margin on top */
   }
 
   .video-content p {
@@ -1309,7 +1344,7 @@ body.menu-open {
 
 @media (max-width: 576px) {
   .video-section {
-	margin-top :27px;
+	margin-top :-20px;
     height: 78vh; /* Even smaller video height on phones */
   }
 
@@ -3240,9 +3275,22 @@ body.menu-open {
 }
 
 .footer-bottom .designed-by {
-  margin-top: 6px;      /* small gap between lines */
-  font-size: 13px;      /* slightly smaller for elegance */
-  color: #aaa;          /* lighter shade than main text */
+  margin-top: 6px;
+  font-size: 13px;
+  color: #aaa; /* lighter text */
+}
+
+/* Link styling inside footer */
+.footer-bottom .designed-by a {
+  color: #f39c12;            /* make link white */
+  text-decoration: none;   /* remove underline */
+  font-weight: 600;        /* optional: make name bolder */
+  transition: color 0.3s ease;
+}
+
+/* Optional hover effect for elegance */
+.footer-bottom .designed-by a:hover {
+  color: white;
 }
 
 
