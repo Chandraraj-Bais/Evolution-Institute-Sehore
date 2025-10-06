@@ -449,12 +449,13 @@ body {
 
 .logo-text .evolution-word .trademark {
   position: absolute;
-  font-size: 0.65rem;    /* smaller, subtle */
+  font-size: 0.8rem;    /* smaller, subtle */
   color: black;
-  top: 6px;             /* moves up above 'n' */
-  right: -12px;            /* slightly right of 'n' */
+  top: 7px;             /* moves up above 'n' */
+  right: 4px;            /* slightly right of 'n' */
   font-weight: 600;
 }
+
 
 
 
@@ -3373,4 +3374,5 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
+
 
