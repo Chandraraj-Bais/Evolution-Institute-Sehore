@@ -697,6 +697,7 @@ body.menu-open {
   font-size: 0.8rem;
   top: 0px;         /* move slightly above 'n' */
   /*right: 8px;*/      /* place just right of 'n' */
+  margin-left: -28px;
   color: black;
   font-weight: bold;
 }
