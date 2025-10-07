@@ -18,30 +18,58 @@ body {
     bottom: 30px;
     right: 30px;
     z-index: 1000;
-    display: none; /* <-- Keep this line to hide it initially */
+    display: none; /* Hidden initially */
 
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     
-    background-color: #0a559c; /* Deep blue from image */
+    background-color: #0a559c; /* Deep blue */
     color: #d0e7ff; /* Light arrow color */
     border: none;
-    border-radius: 10px;
+    border-radius: 12px;
 
-    font-size: 30px;
+    font-size: 33px;  /*  Increased arrow size */
     font-weight: bold;
 
     cursor: pointer;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
 
-    /* REMOVE the duplicate 'display: flex;' here */
+    display: flex; /* ensure arrow is centered */
     align-items: center;
     justify-content: center;
 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
+/* Hover effect for better feel */
+#scrollToTopBtn:hover {
+    background-color: #0d6ed1;
+    transform: scale(1.08);
+}
 
+/* Tablet */
+@media (max-width: 769px) {
+    #scrollToTopBtn {
+        width: 65px;
+        height: 65px;
+        font-size: 40px;  /*  Bigger arrow on tablets */
+        bottom: 22px;
+        right: 22px;
+        border-radius: 15px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+    #scrollToTopBtn {
+        width: 55px;
+        height: 55px;
+        font-size: 40px;  /*  Larger and easy to tap */
+        bottom: 18px;
+        right: 18px;
+        border-radius: 12px;
+    }
+}
 
 /* Scroll to Top Button ends ------------------------------------------------------------------------------------------------------------------------*/
 
@@ -427,7 +455,7 @@ body {
 
 .logo-text .evolution-word .trademark {
   position: absolute;
-  font-size: 0.9rem; /* smaller, subtle */
+  font-size: 0.85rem; /* smaller, subtle */
   color: black;
   top: 7px; /* moves up above 'n' */
   /* KEY CHANGE: Increase right value to place it consistently next to 'n' */
@@ -3378,4 +3406,3 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
-
