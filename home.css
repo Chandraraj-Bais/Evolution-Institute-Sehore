@@ -693,7 +693,7 @@ body.menu-open {
 
 .mobile-title .trademarkk {
   position: absolute;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   top: 0px; /* Align slightly higher for a cleaner look */
   /* KEY CHANGE: Use 'right' property like desktop version */
   right: 0px; /* Position relative to the end of the word */
