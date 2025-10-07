@@ -449,13 +449,13 @@ body {
 
 .logo-text .evolution-word .trademark {
   position: absolute;
-  font-size: 0.8rem;    /* smaller, subtle */
+  font-size: 0.8rem; /* smaller, subtle */
   color: black;
-  top: 7px;             /* moves up above 'n' */
-  right: 4px;            /* slightly right of 'n' */
+  top: 7px; /* moves up above 'n' */
+  /* KEY CHANGE: Increase right value to place it consistently next to 'n' */
+  right: 0px; /* Aligns more consistently to the end of the word */
   font-weight: 600;
 }
-
 
 
 .logo-text .career-word {
@@ -691,13 +691,13 @@ body.menu-open {
   display: inline-block;
 }
 
-/* Trademark styling (mobile) */
 .mobile-title .trademarkk {
   position: absolute;
   font-size: 0.8rem;
-  top: 0px;         /* move slightly above 'n' */
-  /*right: 8px;*/      /* place just right of 'n' */
-  margin-left: -28px;
+  top: 0px; /* Align slightly higher for a cleaner look */
+  /* KEY CHANGE: Use 'right' property like desktop version */
+  right: 0px; /* Position relative to the end of the word */
+  margin-left: 0; /* Remove previous faulty margin */
   color: black;
   font-weight: bold;
 }
@@ -1029,14 +1029,15 @@ body.menu-open {
     font-size: 1.9rem;
   }
 
-  .logo-text .evolution-word .trademark {
+    .logo-text .evolution-word .trademark {
     top: 3px;
-    /*right: 7px;*/
+    right: 0px; /* Consistent positioning */
   }
 
+  /* Mobile Trademark */
   .mobile-title .trademarkk {
-    top: 3px;
-    /*right: 10px;*/
+    top: 3px; /* Adjusted to match desktop small screen */
+    right: 0px; /* Consistent positioning */
   }
   
   .logo-text .career-word {
@@ -1065,15 +1066,16 @@ body.menu-open {
     font-size: 1.9rem;
   }
   
-   .logo-text .evolution-word .trademark {
+ .logo-text .evolution-word .trademark {
     top: 5px;
-    /*    margin-left: -100px;  
-	*/}
+    right: 0px; /* Consistent positioning */
+  }
 
+  /* Mobile Trademark */
   .mobile-title .trademarkk {
     top: 1px;
-/*    margin-left: 1000px;
-  */}
+    right: 0px; /* Consistent positioning */
+  }
   
   .logo-text .career-word {
     font-size: 0.9rem;
