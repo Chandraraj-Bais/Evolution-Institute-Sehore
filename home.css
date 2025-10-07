@@ -42,28 +42,6 @@ body {
 }
 
 
-/* Responsive Adjustments */
-@media (max-width: 769px) {
-    #scrollToTopBtn {
-        width: 60px;
-        height: 60px;
-        font-size: 35px;
-        bottom: 20px; /* Slightly higher */
-        right: 20px; /* Moved further from the right edge */
-        border-radius: 15px;
-    }
-}
-
-@media (max-width: 480px) {
-    #scrollToTopBtn {
-        width: 45px; /* Slightly larger for easier tapping */
-        height: 45px;
-        font-size: 30px;
-        bottom: 15px; /* Moved slightly higher */
-        right: 15px; /* Moved further from the right edge */
-        border-radius: 10px;
-    }
-}
 
 /* Scroll to Top Button ends ------------------------------------------------------------------------------------------------------------------------*/
 
@@ -3400,3 +3378,4 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
+
