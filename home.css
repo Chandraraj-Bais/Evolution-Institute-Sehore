@@ -1061,12 +1061,12 @@ body.menu-open {
   }
 
   .logo-text .evolution-word {
-    font-size: 1.9rem;
+    font-size: 1.95rem;
   }
   
    .logo-text .evolution-word .trademark {
     top: 5px;
-    right: 1px;
+    right: 10px;
   }
 
   .mobile-title .trademarkk {
@@ -3374,6 +3374,7 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
+
 
 
 
