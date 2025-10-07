@@ -18,56 +18,50 @@ body {
     bottom: 30px;
     right: 30px;
     z-index: 1000;
-    display: none; /* Hidden initially */
+    display: none; /* <-- Keep this line to hide it initially */
 
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
     
-    background-color: #0a559c; /* Deep blue */
+    background-color: #0a559c; /* Deep blue from image */
     color: #d0e7ff; /* Light arrow color */
     border: none;
-    border-radius: 12px;
+    border-radius: 10px;
 
-    font-size: 33px;  /*  Increased arrow size */
+    font-size: 30px;
     font-weight: bold;
 
     cursor: pointer;
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
 
-    display: flex; /* ensure arrow is centered */
+    /* REMOVE the duplicate 'display: flex;' here */
     align-items: center;
     justify-content: center;
 
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-/* Hover effect for better feel */
-#scrollToTopBtn:hover {
-    background-color: #0d6ed1;
-    transform: scale(1.08);
-}
 
-/* Tablet */
+/* Responsive Adjustments */
 @media (max-width: 769px) {
     #scrollToTopBtn {
-        width: 65px;
-        height: 65px;
-        font-size: 40px;  /*  Bigger arrow on tablets */
-        bottom: 22px;
-        right: 22px;
+        width: 35px;
+        height: 35px;
+        font-size: 30px;
+        bottom: 20px; /* Slightly higher */
+        right: 20px; /* Moved further from the right edge */
         border-radius: 15px;
     }
 }
 
-/* Mobile */
 @media (max-width: 480px) {
     #scrollToTopBtn {
-        width: 55px;
-        height: 55px;
-        font-size: 40px;  /*  Larger and easy to tap */
-        bottom: 18px;
-        right: 18px;
-        border-radius: 12px;
+        width: 45px; /* Slightly larger for easier tapping */
+        height: 45px;
+        font-size: 30px;
+        bottom: 15px; /* Moved slightly higher */
+        right: 15px; /* Moved further from the right edge */
+        border-radius: 10px;
     }
 }
 
