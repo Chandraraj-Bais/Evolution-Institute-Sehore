@@ -696,7 +696,7 @@ body.menu-open {
   position: absolute;
   font-size: 0.8rem;
   top: 0px;         /* move slightly above 'n' */
-  right: 8px;      /* place just right of 'n' */
+  /*right: 8px;*/      /* place just right of 'n' */
   color: black;
   font-weight: bold;
 }
@@ -1030,12 +1030,12 @@ body.menu-open {
 
   .logo-text .evolution-word .trademark {
     top: 3px;
-    right: 7px;
+    /*right: 7px;*/
   }
 
   .mobile-title .trademarkk {
     top: 3px;
-    right: 10px;
+    /*right: 10px;*/
   }
   
   .logo-text .career-word {
@@ -1066,13 +1066,13 @@ body.menu-open {
   
    .logo-text .evolution-word .trademark {
     top: 5px;
-    right: 1px;
-  }
+    /*    margin-left: -100px;  
+	*/}
 
   .mobile-title .trademarkk {
     top: 1px;
-    margin-left: 100px;
-  }
+/*    margin-left: 1000px;
+  */}
   
   .logo-text .career-word {
     font-size: 0.9rem;
@@ -3373,5 +3373,3 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
-
-
