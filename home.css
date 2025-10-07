@@ -696,7 +696,7 @@ body.menu-open {
   position: absolute;
   font-size: 0.8rem;
   top: -3px;         /* move slightly above 'n' */
-  right: -14px;      /* place just right of 'n' */
+  right: 14px;      /* place just right of 'n' */
   color: black;
   font-weight: bold;
 }
@@ -3373,4 +3373,5 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
+
 
