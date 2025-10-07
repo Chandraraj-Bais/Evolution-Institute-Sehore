@@ -449,7 +449,7 @@ body {
 
 .logo-text .evolution-word .trademark {
   position: absolute;
-  font-size: 0.8rem; /* smaller, subtle */
+  font-size: 0.9rem; /* smaller, subtle */
   color: black;
   top: 7px; /* moves up above 'n' */
   /* KEY CHANGE: Increase right value to place it consistently next to 'n' */
@@ -3349,7 +3349,7 @@ body.menu-open {
   }
 
   .footer-trademark {
-    top: 0px;
+    top: 2px;
     right: -10px;
     font-size: 0.7rem;
   }
