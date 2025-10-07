@@ -693,7 +693,7 @@ body.menu-open {
 
 .mobile-title .trademarkk {
   position: absolute;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   top: 0px; /* Align slightly higher for a cleaner look */
   /* KEY CHANGE: Use 'right' property like desktop version */
   right: 0px; /* Position relative to the end of the word */
@@ -704,7 +704,7 @@ body.menu-open {
 
 
 .mobile-title .career-word {
-  font-size: 0.8rem;
+  font-size: 0.79rem;
   color: #003c71;
   font-weight: 600;
   white-space: nowrap;
@@ -1029,8 +1029,8 @@ body.menu-open {
     font-size: 1.9rem;
   }
 
-    .logo-text .evolution-word .trademark {
-    top: 2px;
+   .logo-text .evolution-word .trademark {
+    top: 1.5px;
     right: 0px; /* Consistent positioning */
   }
 
@@ -1067,7 +1067,7 @@ body.menu-open {
   }
   
  .logo-text .evolution-word .trademark {
-    top: 4px;
+    top: 3.5px;
     right: 0px; /* Consistent positioning */
   }
 
