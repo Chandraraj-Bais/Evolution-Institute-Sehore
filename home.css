@@ -1071,7 +1071,7 @@ body.menu-open {
 
   .mobile-title .trademarkk {
     top: 2px;
-    right: 10px;
+    right: -10px;
   }
   
   .logo-text .career-word {
@@ -3373,6 +3373,7 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
+
 
 
 
