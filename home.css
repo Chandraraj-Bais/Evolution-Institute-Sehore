@@ -704,7 +704,7 @@ body.menu-open {
 
 
 .mobile-title .career-word {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #003c71;
   font-weight: 600;
   white-space: nowrap;
@@ -990,7 +990,7 @@ body.menu-open {
   }
 
   .logo-text .career-word {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
 }
 
@@ -1005,7 +1005,7 @@ body.menu-open {
   }
 
   .logo-text .career-word {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
   }
 
   .mobile-nav a {
@@ -1030,7 +1030,7 @@ body.menu-open {
   }
 
     .logo-text .evolution-word .trademark {
-    top: 3px;
+    top: 2px;
     right: 0px; /* Consistent positioning */
   }
 
@@ -1067,7 +1067,7 @@ body.menu-open {
   }
   
  .logo-text .evolution-word .trademark {
-    top: 5px;
+    top: 4px;
     right: 0px; /* Consistent positioning */
   }
 
