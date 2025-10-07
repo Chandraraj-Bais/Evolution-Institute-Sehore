@@ -45,9 +45,9 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 769px) {
     #scrollToTopBtn {
-        width: 35px;
-        height: 35px;
-        font-size: 30px;
+        width: 45px;
+        height: 45px;
+        font-size: 32.5px;
         bottom: 20px; /* Slightly higher */
         right: 20px; /* Moved further from the right edge */
         border-radius: 15px;
@@ -56,8 +56,8 @@ body {
 
 @media (max-width: 480px) {
     #scrollToTopBtn {
-        width: 35px; /* Slightly larger for easier tapping */
-        height: 35px;
+        width: 38px; /* Slightly larger for easier tapping */
+        height: 38px;
         font-size: 30px;
         bottom: 15px; /* Moved slightly higher */
         right: 15px; /* Moved further from the right edge */
@@ -3401,3 +3401,4 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
+
