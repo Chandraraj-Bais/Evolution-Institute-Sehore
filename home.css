@@ -695,8 +695,8 @@ body.menu-open {
 .mobile-title .trademarkk {
   position: absolute;
   font-size: 0.8rem;
-  top: -3px;         /* move slightly above 'n' */
-  right: 24px;      /* place just right of 'n' */
+  top: 0px;         /* move slightly above 'n' */
+  right: 8px;      /* place just right of 'n' */
   color: black;
   font-weight: bold;
 }
@@ -1029,8 +1029,8 @@ body.menu-open {
   }
 
   .logo-text .evolution-word .trademark {
-    top: -3px;
-    right: -12px;
+    top: 3px;
+    right: 7px;
   }
 
   .mobile-title .trademarkk {
@@ -1061,17 +1061,17 @@ body.menu-open {
   }
 
   .logo-text .evolution-word {
-    font-size: 1.95rem;
+    font-size: 1.9rem;
   }
   
    .logo-text .evolution-word .trademark {
     top: 5px;
-    right: 10px;
+    right: 1px;
   }
 
   .mobile-title .trademarkk {
-    top: 2px;
-    right: 10px;
+    top: 1px;
+    right: 8px;
   }
   
   .logo-text .career-word {
@@ -1087,7 +1087,6 @@ body.menu-open {
     padding-top: 20px;
   }
 }
-
 
 
 /* Header ends ------------------------------------------------------------------------------------------------------------------------------------- */
@@ -3374,13 +3373,3 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
