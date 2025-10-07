@@ -56,8 +56,8 @@ body {
 
 @media (max-width: 480px) {
     #scrollToTopBtn {
-        width: 45px; /* Slightly larger for easier tapping */
-        height: 45px;
+        width: 35px; /* Slightly larger for easier tapping */
+        height: 35px;
         font-size: 30px;
         bottom: 15px; /* Moved slightly higher */
         right: 15px; /* Moved further from the right edge */
@@ -1202,15 +1202,16 @@ body.menu-open {
 @media (max-width: 768px) {
   .carousel-card {
     font-size: 1.3rem; /* smaller for tablets & small screens */
-    padding: 12px 30px;
+    padding: 13px 30px;
   }
 }
 
 @media (max-width: 480px) {
   .carousel-card {
     font-size: 1.0rem; /* smaller for mobile phones */
-    padding: 12px 20px;
+    padding: 13px 20px;
   }
+
 }
 
 
