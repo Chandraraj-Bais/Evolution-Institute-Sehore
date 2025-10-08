@@ -18,35 +18,26 @@
 <body>
 
 <!-- Scroll to Top Button ---------------------------------------------------------------------------------------------------------------------------->
-	<button id="scrollToTopBtn" title="Go to top" style="display: none;">↑</button>
+		<!-- Scroll to Top Button -->
+	<button id="scrollToTopBtn" title="Go to top">
+		<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+			<path d="M12 19V6M5 12l7-6 7 6" stroke-linecap="round" stroke-linejoin="round"/>
+		</svg>
+	</button>
+
 	<script>
-		
-		document.addEventListener("DOMContentLoaded", function () 
-		{
-			const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-	
-			// Show or hide the button on scroll
-			window.addEventListener("scroll", function () 
-			{
-				if (window.scrollY > 300) 
-				{
-					scrollToTopBtn.style.display = "flex"; // Using flex, not block (as our CSS uses flexbox)
-				} 
-				else 
-				{
-					scrollToTopBtn.style.display = "none";
-				}
+		document.addEventListener("DOMContentLoaded", function () {
+			const btn = document.getElementById("scrollToTopBtn");
+
+			window.addEventListener("scroll", function () {
+				btn.style.display = window.scrollY > 300 ? "flex" : "none";
 			});
 
-			// Scroll to top on button click
-			scrollToTopBtn.addEventListener("click", function () 
-			{
+			btn.addEventListener("click", function () {
 				window.scrollTo({ top: 0, behavior: "smooth" });
 			});
 		});
-	
 	</script>
-
 
 <!-- Scroll to Top Button ends ----------------------------------------------------------------------------------------------------------------------->
 
@@ -547,7 +538,7 @@ downloadLink.addEventListener('click', function(e) {
 				paragraph: "Expert-led programs for PNST, CUET (Biology), and NEET UG — designed to help you succeed.",
 				showButton: true,
 				buttonText: "Courses",
-				buttonLink: "neet_course.html"
+				buttonLink: "courses.html"
 			},
 		 
 			{
