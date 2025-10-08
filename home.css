@@ -13,57 +13,74 @@ body {
 }
 
 /* Scroll to Top Button -----------------------------------------------------------------------------------------------------------------------------*/
-#scrollToTopBtn {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    z-index: 1000;
-    display: none; /* <-- Keep this line to hide it initially */
+	#scrollToTopBtn {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		z-index: 1000;
+		display: none;
 
-    width: 50px;
-    height: 50px;
-    
-    background-color: #0a559c; /* Deep blue from image */
-    color: #d0e7ff; /* Light arrow color */
-    border: none;
-    border-radius: 10px;
+		width: 58px;
+		height: 58px;
+		background: rgba(255, 255, 255, 0.15);
+		border: 2px solid #0a559c;
+		border-radius: 50%;
+		box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
 
-    font-size: 30px;
-    font-weight: bold;
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-    cursor: pointer;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.35);
+		backdrop-filter: blur(5px);
+		transition: all 0.3s ease;
+	}
 
-    /* REMOVE the duplicate 'display: flex;' here */
-    align-items: center;
-    justify-content: center;
+	#scrollToTopBtn svg {
+		width: 28px;
+		height: 28px;
+		stroke: #0a559c;
+		stroke-width: 2.2;
+		fill: none;
+		transition: all 0.3s ease;
+	}
 
-    transition: background-color 0.3s ease, transform 0.3s ease;
-}
+	/* Hover effect */
+	#scrollToTopBtn:hover {
+		background-color: #0a559c;
+		transform: translateY(-5px);
+	}
+	#scrollToTopBtn:hover svg {
+		stroke: white;
+		transform: translateY(0px);
+	}
 
+	/* Optional cursor upgrade */
+	#scrollToTopBtn:hover {
+		cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="%23ffffff" d="M12 19V6l7 6.5H5L12 6z"/></svg>') 16 16, auto;
+	}
 
-/* Responsive Adjustments */
-@media (max-width: 769px) {
-    #scrollToTopBtn {
-        width: 45px;
-        height: 45px;
-        font-size: 32.5px;
-        bottom: 20px; /* Slightly higher */
-        right: 20px; /* Moved further from the right edge */
-        border-radius: 15px;
-    }
-}
+	/* Responsive */
+	@media (max-width: 769px) {
+		#scrollToTopBtn {
+			width: 48px;
+			height: 48px;
+			bottom: 20px;
+			right: 20px;
+		}
+		#scrollToTopBtn svg {
+			width: 22px;
+			height: 22px;
+		}
+	}
 
-@media (max-width: 480px) {
-    #scrollToTopBtn {
-        width: 38px; /* Slightly larger for easier tapping */
-        height: 38px;
-        font-size: 30px;
-        bottom: 15px; /* Moved slightly higher */
-        right: 15px; /* Moved further from the right edge */
-        border-radius: 10px;
-    }
-}
+	@media (max-width: 480px) {
+		#scrollToTopBtn {
+			width: 42px;
+			height: 42px;
+			bottom: 15px;
+			right: 15px;
+		}
+	}
 
 /* Scroll to Top Button ends ------------------------------------------------------------------------------------------------------------------------*/
 
@@ -76,8 +93,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 4px 20px;
-  font-size: 15px;
+  padding: 2px 20px;
+  font-size: 10px;
   font-family: 'Segoe UI', sans-serif;
   flex-wrap: wrap;
   overflow: visible; /* allow tooltip to appear outside */
@@ -359,7 +376,7 @@ body {
 @media (max-width: 576px) {
   .top-bar {
     flex-direction: column;
-    padding: 8px 5px;
+    padding: 1px 5px;
   }
 
   .top-left {
@@ -378,7 +395,7 @@ body {
   .email-wrap {
     order: 2;
     justify-content: center;
-    font-size: 13.8px;
+    font-size: 11px;
   }
 
   .top-right,
@@ -391,7 +408,7 @@ body {
   }
   
   .icon {
-    font-size: 24px;
+    font-size: 21px;
   }
   
 }
@@ -3401,4 +3418,3 @@ body.menu-open {
 
 
 /* Animation Section ends ------------------------------------------------------------------------------------------------------------------------- */
-
